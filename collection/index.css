@@ -1,0 +1,141 @@
+section.custom {
+    height: auto;
+    padding-bottom: 75px;
+}
+
+div.title {
+    text-align: left;
+    margin-left: 10px;
+    width: 100%;
+}
+
+div.coins {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+div.text {
+    margin-left: 10px;
+}
+
+
+
+form.coin {
+    padding: 10px 20px 10px 20px;
+    align-items: center;
+    display: flex;
+    width: 100%;
+
+    background-color: #58585820;
+}
+
+form.coin span,
+form.coin button,
+form.coin input {
+    width: 25%;
+}
+
+img.coin_icon {
+    width: 100%;
+}
+
+button.coin {
+    background-color: #379da0;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+input.inv {
+    display: none;
+}
+
+
+
+/*
+// RESPONSIVENESS
+// Depending on the screen width
+*/
+@media screen and (min-width: 1201px) {
+    form.coin span.coin_icon {
+        width: 15%;
+    }
+
+    span.coin {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+    form.coin span.coin_icon {
+        width: 15%;
+    }
+
+    span.coin {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+    form.coin span.coin_icon {
+        width: 17.5%;
+    }
+
+    span.coin {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    form.coin span.coin_icon {
+        width: 20%;
+    }
+
+    span.coin {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    form.coin {
+        flex-direction: column;
+    }
+
+    form.coin span,
+    form.coin button,
+    form.coin input {
+        margin-bottom: 8px;
+        width: 100%;
+    }
+
+    form.coin span.coin_icon {
+        width: 25%;
+    }
+
+    span.coin {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    form.coin {
+        flex-direction: column;
+    }
+
+    form.coin span,
+    form.coin button,
+    form.coin input {
+        margin-bottom: 8px;
+        width: 100%;
+    }
+
+    form.coin span.coin_icon {
+        width: 50%;
+    }
+
+    span.coin {
+        font-size: 18px;
+    }
+}

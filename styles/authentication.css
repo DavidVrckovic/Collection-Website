@@ -1,0 +1,104 @@
+section.form {
+    justify-content: center;
+    padding: 30px;
+    text-align: left;
+    
+    background-color: var(--primary-color);
+    color: var(--text);
+}
+
+label.input_title {
+    font-weight: bold;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    display: inline-block;
+    margin: 5px 0px 22px 0px;
+    padding: 15px;
+    width: 100%;
+
+    background: #f1f1f1;
+    border: none;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+    background-color: #dddddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+button.authenticate {
+    padding: 16px 20px;
+    margin: 8px 0px;
+    width: 100%;
+
+    background-color: #029161;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    opacity: 0.85;
+}
+
+button.authenticate:hover {
+    opacity: 1;
+}
+
+a.authenticate_other {
+    color: var(--text);
+    text-decoration: none;
+}
+
+a.authenticate_other:hover {
+    text-decoration: underline;
+}
+
+
+
+/*
+// RESPONSIVENESS
+// Depending on the screen width
+*/
+@media screen and (min-width: 1201px) {
+    form.authenticate {
+        width: 44%
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+    form.authenticate {
+        width: 50%
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+    form.authenticate {
+        width: 60%
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    form.authenticate {
+        width: 85%
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    form.authenticate {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 400px) {
+    form.authenticate {
+        width: 100%
+    }
+}

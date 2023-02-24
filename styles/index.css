@@ -1,0 +1,199 @@
+/* Makes a document fit the whole screen */
+body {
+    margin: 0px;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+section {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+section.has_empty_bg,
+section.has_empty_bg div.inner.has_text {
+    background-color: var(--primary-color);
+    color: var(--text);
+}
+
+img.normal,
+img.small {
+    object-fit: cover;
+    width: 100%;
+
+    filter: brightness(70%);
+    user-select: none;
+}
+
+div.inner.has_text {
+    align-items: center;
+    position: absolute;
+    width: 100%;
+}
+
+
+
+h1.title {
+    font-weight: bold;
+}
+
+div.line {
+    background-color: #d1d1e0;
+    height: 1px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+div.line.orange {
+    background-color: #ff8800;
+}
+
+div.text {
+    font-weight: normal;
+}
+
+
+
+/*
+// RESPONSIVENESS
+// Depending on the screen width
+*/
+@media screen and (min-width: 1201px) {
+    .normal {
+        height: 30vw;
+    }
+
+    .small {
+        height: 16vw;
+    }
+
+    h1.title {
+        font-size: 36px;
+    }
+
+    div.line {
+        width: 500px;
+    }
+
+    div.text {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1200px) {
+    .normal {
+        height: 34vw;
+    }
+
+    .small {
+        height: 18vw;
+    }
+
+    h1.title {
+        font-size: 35px;
+    }
+
+    div.line {
+        width: 450px;
+    }
+
+    div.text {
+        font-size: 21px;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+    .normal {
+        height: 38vw;
+    }
+
+    .small {
+        height: 20vw;
+    }
+
+    h1.title {
+        font-size: 34px;
+    }
+
+    div.line {
+        width: 400px;
+    }
+
+    div.text {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    .normal {
+        height: 42vw;
+    }
+
+    .small {
+        height: 22vw;
+    }
+
+    h1.title {
+        font-size: 4vw;
+    }
+
+    div.line {
+        width: 50vw;
+    }
+
+    div.text {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    .normal {
+        height: 46vw;
+    }
+
+    .small {
+        height: 24vw;
+    }
+
+    h1.title {
+        font-size: 5vw;
+    }
+
+    div.line {
+        width: 60vw;
+    }
+
+    div.text {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .normal {
+        height: 50vw;
+    }
+
+    .small {
+        height: 26vw;
+    }
+
+    h1.title {
+        font-size: 6.5vw;
+    }
+
+    div.line {
+        width: 70vw;
+    }
+
+    div.text {
+        font-size: 4vw;
+    }
+}

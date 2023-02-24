@@ -1,0 +1,21 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #212121;
+
+    --text: #000000;
+    --dropdown-background: #dddddd;
+    --dropdown-boxshadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+    --back_to_top_shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.2);
+}
+
+.dark_theme {
+    --primary-color: #212121;
+    --secondary-color: #ffffff;
+
+    --text: #ffffff;
+    --dropdown-background: grey;
+    --dropdown-boxshadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+    
+    --back_to_top_shadow: 0px 0px 16px 4px rgba(255, 255, 255, 0.2);
+}
